@@ -1,0 +1,9 @@
+C:\Users\Lenovo\Documents\Unreal Projects\Steam_Multiplayer\Encrypted\sdk\steamworksexample\win64\Debug\SteamworksExample.vcxproj.CopyComplete
+C:\Users\Lenovo\Documents\Unreal Projects\Steam_Multiplayer\Encrypted\sdk\steamworksexample\win64\Debug\SteamworksExample.exe
+C:\Users\Lenovo\Documents\Unreal Projects\Steam_Multiplayer\Encrypted\sdk\steamworksexample\win64\Debug\D3DCompiler_43.dll
+C:\Users\Lenovo\Documents\Unreal Projects\Steam_Multiplayer\Encrypted\sdk\steamworksexample\win64\Debug\d3dx9d_43.dll
+C:\Users\Lenovo\Documents\Unreal Projects\Steam_Multiplayer\Encrypted\sdk\steamworksexample\win64\Debug\d3dx10d_43.dll
+C:\Users\Lenovo\Documents\Unreal Projects\Steam_Multiplayer\Encrypted\sdk\steamworksexample\win64\Debug\d3dx11d_43.dll
+C:\Users\Lenovo\Documents\Unreal Projects\Steam_Multiplayer\Encrypted\sdk\steamworksexample\win64\Debug\xapobaseredist.pdb
+C:\Users\Lenovo\Documents\Unreal Projects\Steam_Multiplayer\Encrypted\sdk\steamworksexample\win64\Debug\xaudio2_9redist.pdb
+C:\Users\Lenovo\Documents\Unreal Projects\Steam_Multiplayer\Encrypted\sdk\steamworksexample\win64\Debug\xaudio2_9redist.dll

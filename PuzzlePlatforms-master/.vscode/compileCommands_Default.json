@@ -1,0 +1,107 @@
+[
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\MenuSystem\\MainMenu.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\MenuSystem\\MainMenu.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\MenuSystem\\MenuInterface.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\MenuSystem\\MenuInterface.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\MenuSystem\\MenuWidget.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\MenuSystem\\MenuWidget.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\MenuSystem\\PauseMenu.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\MenuSystem\\PauseMenu.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\MovingPlatform.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\MovingPlatform.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\PlatformTrigger.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\PlatformTrigger.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\PuzzlePlatforms.Build.cs",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\PuzzlePlatforms.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\PuzzlePlatforms.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\PuzzlePlatformsCharacter.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\PuzzlePlatformsCharacter.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\PuzzlePlatformsGameInstance.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\PuzzlePlatformsGameInstance.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\PuzzlePlatformsGameMode.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\Source\\PuzzlePlatforms\\PuzzlePlatformsGameMode.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Users\\Lenovo\\Documents\\Unreal Projects\\MenuSystem\\PuzzlePlatforms-master\\.vscode\\compileCommands_Default\\PuzzlePlatforms.211.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	}
+]
