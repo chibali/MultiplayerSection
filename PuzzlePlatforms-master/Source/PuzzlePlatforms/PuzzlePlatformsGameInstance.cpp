@@ -3,12 +3,15 @@
 
 #include "PuzzlePlatformsGameInstance.h"
 #include "Engine/Engine.h"
-#include "OnlineSubsystem.h"
+#include "OnlineSessionSettings.h"
+#include "Interfaces/OnlineSessionInterface.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Blueprint/UserWidget.h"
 #include "MenuSystem/MainMenu.h"
 #include "MenuSystem/MenuWidget.h"
 #include "PlatformTrigger.h"
+
+const static FName SESSION_NAME = TEXT("My Session Game");
 
 UPuzzlePlatformsGameInstance::UPuzzlePlatformsGameInstance(const FObjectInitializer & ObjectInitializer)
 {
@@ -51,13 +54,26 @@ void UPuzzlePlatformsGameInstance::LoadPauseMenu()
 void UPuzzlePlatformsGameInstance::Init()
 {
     UE_LOG(LogTemp, Warning, TEXT("Init() Log Message"));
-    
-    
     IOnlineSubsystem* OnlineSubsystem = IOnlineSubsystem::Get();
 
     if (OnlineSubsystem != nullptr)
     {
         UE_LOG(LogTemp, Warning, TEXT("Found Subsystem: %s"), *OnlineSubsystem->GetSubsystemName().ToString());
+        SessionInterface = OnlineSubsystem->GetSessionInterface();
+        if (SessionInterface.IsValid())
+        {
+            SessionInterface->OnCreateSessionCompleteDelegates.AddUObject(this, &UPuzzlePlatformsGameInstance::OnCreateSessionComplete);
+            SessionInterface->OnDestroySessionCompleteDelegates.AddUObject(this, &UPuzzlePlatformsGameInstance::OnDestroySessionComplete);
+            SessionInterface->OnFindSessionsCompleteDelegates.AddUObject(this, &UPuzzlePlatformsGameInstance::OnFindSessionsComplete);
+
+            SessionSearch = MakeShareable(new FOnlineSessionSearch());
+            if (SessionSearch.IsValid())
+            {
+                SessionSearch->bIsLanQuery = true;
+                SessionInterface->FindSessions(0, SessionSearch.ToSharedRef());
+                UE_LOG(LogTemp, Warning, TEXT("Finding Sessions..."));
+            }
+        }
     }
     else
     {
@@ -68,9 +84,32 @@ void UPuzzlePlatformsGameInstance::Init()
 
 void UPuzzlePlatformsGameInstance::Host()
 {
+    if (SessionInterface.IsValid())
+    {
+        auto ExistingSession = SessionInterface->GetNamedSession(SESSION_NAME);
+        if (ExistingSession != nullptr)
+        {
+            SessionInterface->DestroySession(SESSION_NAME);
+        }
+        else
+        {
+            UE_LOG(LogTemp, Warning, TEXT("FIRST SESSION CREATED"));
+            CreateSession();
+        }
+    }
+}
+
+void UPuzzlePlatformsGameInstance::OnCreateSessionComplete(FName SessionName, bool Success)
+{
+    if (!Success)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("Could not create Online session"));
+        return;
+    }
+     
     UEngine* Engine = GetEngine();
 
-    if(Engine != nullptr)
+    if (Engine != nullptr)
     {
         Engine->AddOnScreenDebugMessage(0, 2, FColor::Green, TEXT("Hosting"));
     }
@@ -79,6 +118,42 @@ void UPuzzlePlatformsGameInstance::Host()
     if (World != nullptr)
     {
         World->ServerTravel("/Game/ThirdPerson/Maps/ThirdPersonMap?listen");
+    }
+}
+
+void UPuzzlePlatformsGameInstance::CreateSession()
+{
+    if (SessionInterface.IsValid())
+    {
+        FOnlineSessionSettings SessionSettings;
+        SessionSettings.bIsLANMatch = true;
+        SessionSettings.NumPublicConnections = 2;
+        SessionSettings.bShouldAdvertise = true;
+        SessionInterface->CreateSession(0, SESSION_NAME, SessionSettings);
+    }
+}
+
+void UPuzzlePlatformsGameInstance::OnDestroySessionComplete(FName SessionName, bool Success)
+{
+    if (Success)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("Session Destroyed, creating a new Online Session"));
+        CreateSession();
+    }
+}
+
+void UPuzzlePlatformsGameInstance::OnFindSessionsComplete(bool Success)
+{
+    if (Success)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("Session search complete"));
+        if (Success && SessionSearch.IsValid())
+        { 
+            for (const FOnlineSessionSearchResult& SearchResult : SessionSearch->SearchResults)
+            {
+                UE_LOG(LogTemp, Warning, TEXT("Session found: %s"), *SearchResult.GetSessionIdStr());
+            }
+        }   
     }
 }
 
