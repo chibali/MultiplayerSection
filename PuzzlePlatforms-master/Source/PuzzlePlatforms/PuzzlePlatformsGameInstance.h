@@ -31,12 +31,14 @@ public:
 	UFUNCTION(Exec)
 	void Host() override;
 
-
 	UFUNCTION(Exec)
 	void Join(const FString& Address) override;
 
 	UFUNCTION(Exec, BlueprintCallable)
 	virtual void Quit() override;
+
+	UFUNCTION(Exec)
+	virtual void FindSessions() override;
 
 
 

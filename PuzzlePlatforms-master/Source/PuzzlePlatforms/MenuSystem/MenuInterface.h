@@ -28,4 +28,6 @@ public:
 	virtual void Join(const FString& Address) = 0;
 
 	virtual void Quit() = 0;
+
+	virtual void FindSessions() = 0;
 };
