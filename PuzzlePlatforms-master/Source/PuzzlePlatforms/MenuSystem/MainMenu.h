@@ -6,6 +6,17 @@
 #include "MenuWidget.h"
 #include "MainMenu.generated.h"
 
+USTRUCT()
+struct FServerData 
+{
+	GENERATED_BODY()
+
+	FString Name;
+	uint16 CurrentPlayers;
+	uint16 MaxPlayers;
+	FString HostUsername;
+};
+
 /**
  * 
  */
@@ -20,7 +31,13 @@ public:
 
 	virtual void OnLevelRemovedFromWorld(ULevel* InLevel, UWorld* InWorld) override;
 
-	void SetServerList(TArray<FString> ServerNames);
+	void SetServerList(TArray<FServerData> ServerNames);
+
+	void SelectIndex(uint32 Index);
+
+	UPROPERTY()
+	FString ServerName;
+
 
 protected:
 
@@ -34,6 +51,15 @@ private:
 
 	UPROPERTY(meta = (BindWidget))
 	class UButton* HostButton;
+
+	UPROPERTY(meta = (BindWidget))
+	class UEditableTextBox* ServerNameField;
+
+	UPROPERTY(meta = (BindWidget))
+	class UButton* SetNameButton;
+
+	UPROPERTY(meta = (BindWidget))
+	class UButton* CancelButton;
 
 	UPROPERTY(meta = (BindWidget))
 	class UButton* JoinButton;
@@ -57,6 +83,9 @@ private:
 	class UWidget* JoinMenu;
 
 	UPROPERTY(meta = (BindWidget))
+	class UWidget* HostMenu;
+
+	UPROPERTY(meta = (BindWidget))
 	class UPanelWidget* ServerList;
 
 	UFUNCTION()
@@ -71,6 +100,13 @@ private:
 	UFUNCTION()
 	void OpenMainMenu();
 
+	UFUNCTION()
+	void OpenHostMenu();
+
 	UFUNCTION(Exec, BlueprintCallable)
 	void QuitGame();
+
+	TOptional<uint32> SelectedIndex;
+
+	void  UpdateChildren();
 };
