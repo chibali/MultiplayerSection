@@ -8,9 +8,10 @@
 #include "Blueprint/UserWidget.h"
 #include "MenuSystem/MainMenu.h"
 #include "MenuSystem/MenuWidget.h"
+#include "UObject/UnrealNames.h"
 #include "PlatformTrigger.h"
 
-const static FName SESSION_NAME = TEXT("My Session Game");
+const static FName SESSION_NAME = EName::GameSession;
 const static FName SERVER_NAME_SETTINGS_KEY = TEXT("ServerName");
 
 UPuzzlePlatformsGameInstance::UPuzzlePlatformsGameInstance(const FObjectInitializer & ObjectInitializer)
@@ -73,6 +74,10 @@ void UPuzzlePlatformsGameInstance::Init()
         UE_LOG(LogTemp, Warning, TEXT("Found Subsystem"));
     }
 
+    if (GEngine != nullptr)
+    {
+        GEngine->OnNetworkFailure().AddUObject(this, &UPuzzlePlatformsGameInstance::OnNetworkFailure);
+    }
 }
 
 void UPuzzlePlatformsGameInstance::Host()
@@ -108,7 +113,7 @@ void UPuzzlePlatformsGameInstance::CreateSession()
             SessionSettings.bIsLANMatch = false;
         }
 
-        SessionSettings.NumPublicConnections = 2;
+        SessionSettings.NumPublicConnections = 5;
         SessionSettings.bShouldAdvertise = true;
         SessionSettings.bUsesPresence = true;
         SessionSettings.bUseLobbiesIfAvailable = true;
@@ -145,6 +150,19 @@ void UPuzzlePlatformsGameInstance::OnDestroySessionComplete(FName SessionName, b
     {
         UE_LOG(LogTemp, Warning, TEXT("Session Destroyed, creating a new Online Session"));
         CreateSession();
+    }
+}
+
+void UPuzzlePlatformsGameInstance::OnNetworkFailure(UWorld* World, UNetDriver* NetDriver, ENetworkFailure::Type FailureType, const FString& ErrorString)
+{
+    Quit();
+}
+
+void UPuzzlePlatformsGameInstance::StartSession()
+{
+    if (SessionInterface.IsValid())
+    {
+        SessionInterface->StartSession(SESSION_NAME);
     }
 }
 

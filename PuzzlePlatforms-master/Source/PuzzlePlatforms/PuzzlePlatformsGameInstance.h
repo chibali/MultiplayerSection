@@ -41,6 +41,7 @@ public:
 	UFUNCTION(Exec)
 	virtual void FindSessions() override;
 
+	void StartSession();
 
 private:
 
@@ -53,12 +54,10 @@ private:
 	TSharedPtr<class FOnlineSessionSearch> SessionSearch;
 
 	void OnCreateSessionComplete(FName SessionName, bool Success);
-
 	void OnDestroySessionComplete(FName Sessionname, bool Success);
-
 	void OnFindSessionsComplete(bool Success);
-
 	void OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
+	void OnNetworkFailure(UWorld* World, UNetDriver* NetDriver, ENetworkFailure::Type FailureType, const FString& ErrorString);
 
 	void CreateSession();
 
